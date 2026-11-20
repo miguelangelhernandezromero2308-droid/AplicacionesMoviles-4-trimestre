@@ -40,7 +40,7 @@ export default function App() {
     setContador(0);
     setRegistros([]);
   };
-  
+
   return (
     <View style={estilos.body}>
       <View style={estilos.container}>
@@ -55,12 +55,18 @@ export default function App() {
         <Text style={estilos.counterBox}>{contador}</Text>
 
         {/* Botón disparador de eventos */}
-        <TouchableOpacity
-          style={estilos.btnClick}
-          onPress={incrementarContador}
-        >
-          <Text style={estilos.btnText}>¡Haz Clic Aquí!</Text>
-        </TouchableOpacity>
+                <View style={estilos.filaBotones}>
+          <TouchableOpacity
+            style={estilos.btnClick}
+            onPress={incrementarContador}
+          >
+            <Text style={estilos.btnText}>¡Haz Clic Aquí!</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={estilos.btnReset} onPress={reiniciar}>
+            <Text style={estilos.btnText}>Reiniciar</Text>
+          </TouchableOpacity>
+        </View>
 
         {/* Tabla de registros */}
         <View style={estilos.tableContainer}>
