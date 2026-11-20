@@ -181,4 +181,20 @@ const estilos = StyleSheet.create({
   cellHora: {
     flex: 2,
   },
+
+    filaBotones: {
+    flexDirection: "row",
+    gap: 12,
+  },
+  btnReset: {
+    backgroundColor: "#e74c3c",
+    paddingVertical: 12,
+    paddingHorizontal: 28,
+    borderRadius: 8,
+    elevation: 4,
+    shadowColor: "#e74c3c",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 8,
+  }
 });
