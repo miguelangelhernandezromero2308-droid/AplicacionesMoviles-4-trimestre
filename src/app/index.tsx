@@ -41,9 +41,12 @@ export default function App() {
     setRegistros([]);
   };
 
+  const superaLimite = contador > 10;
+
   return (
     <View style={estilos.body}>
-      <View style={estilos.container}>
+      <View
+        style={[estilos.container, superaLimite && estilos.containerAlto]}>
         {/* Título y descripción */}
         <Text style={estilos.h1}>Interactividad con el DOM</Text>
         <Text style={estilos.description}>
@@ -52,7 +55,9 @@ export default function App() {
         </Text>
 
         {/* Contador dinámico */}
-        <Text style={estilos.counterBox}>{contador}</Text>
+        <Text style={[estilos.counterBox, superaLimite && estilos.counterAlto]}>
+          {contador}
+        </Text>
 
         {/* Botón disparador de eventos */}
                 <View style={estilos.filaBotones}>
