@@ -151,6 +151,12 @@ const estilos = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
   },
+    containerAlto: {
+    backgroundColor: "#fff4e5",
+  },
+  counterAlto: {
+    color: "#e67e22",
+  },
   tableContainer: {
     alignSelf: "stretch",
     marginTop: 24,
