@@ -35,6 +35,12 @@ export default function App() {
     setRegistros([nuevoRegistro, ...registros]);
   };
 
+    // Reto 1: reiniciar todo a cero
+  const reiniciar = () => {
+    setContador(0);
+    setRegistros([]);
+  };
+  
   return (
     <View style={estilos.body}>
       <View style={estilos.container}>
